@@ -1,15 +1,10 @@
-package com.valbruno.model;
+package com.valbruno.crudquarkus.model;
+
+import com.valbruno.crudquarkus.enums.GenreEnum;
+import lombok.*;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import com.valbruno.crudquarkus.enums.GenreEnum;
-
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
 
 @Getter 
 @Setter

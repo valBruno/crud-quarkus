@@ -1,4 +1,4 @@
-package com.valbruno;
+package com.valbruno.crudquarkus;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

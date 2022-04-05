@@ -1,4 +1,4 @@
-package com.valbruno.enums;
+package com.valbruno.crudquarkus.enums;
 
 public enum GenreEnum {
 
