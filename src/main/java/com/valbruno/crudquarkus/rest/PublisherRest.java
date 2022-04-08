@@ -6,6 +6,7 @@ import com.valbruno.crudquarkus.repository.PublisherRepo;
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
@@ -23,5 +24,15 @@ public class PublisherRest {
         List<Publisher> publishers = publisherRepo.listAll();
 
         return publishers;
+    }
+
+    @GET
+    @Path("/{idPublisher}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Publisher getPublisher(@PathParam("idPublisher") Long id) {
+
+        Publisher publisher = publisherRepo.findById(id);
+
+        return publisher;
     }
 }
